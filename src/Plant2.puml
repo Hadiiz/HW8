@@ -1,0 +1,185 @@
+@startuml
+together{
+   object "<u>index0: Character</u>" as Character0{
+       character="H"
+       characterProperty=
+       Calibri99Blue
+   }
+   object "<u>index1: Character</u>" as Character1{
+       character="e"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index2: Character</u>" as Character2{
+       character="l"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index3: Character</u>" as Character3{
+       character="l"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index4: Character</u>" as Character4{
+       character="o"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index5: Character</u>" as Character5{
+       character="W"
+       characterProperty=
+       Calibri99Blue
+   }
+   object "<u>index6: Character</u>" as Character6{
+       character="o"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index7: Character</u>" as Character7{
+       character="r"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index8: Character</u>" as Character8{
+       character="l"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index9: Character</u>" as Character9{
+       character="d"
+       characterProperty=
+       Arial14Black
+   }
+   object "<u>index10: Character</u>" as Character10{
+       character="C"
+       characterProperty=
+       Verdana18Blue
+   }
+   object "<u>index11: Character</u>" as Character11{
+       character="S"
+       characterProperty=
+       Verdana18Blue
+   }
+   object "<u>index12: Character</u>" as Character12{
+       character="5"
+       characterProperty=
+       Verdana12Red
+   }
+   object "<u>index13: Character</u>" as Character13{
+       character="8"
+       characterProperty=
+       Verdana12Red
+   }
+   object "<u>index14: Character</u>" as Character14{
+       character="0"
+       characterProperty=
+       Verdana12Red
+   }
+   object "<u>index15: Character</u>" as Character15{
+       character="0"
+       characterProperty=
+       Verdana12Red
+   }
+}
+
+object "<u>Arial16Black: CharacterProperties</u>" as Arial16Black{
+   font="Arial"
+   color="Black"
+   size=16
+}
+object "<u>Arial14Black: CharacterProperties</u>" as Arial14Black{
+   font="Arial"
+   color="Black"
+   size=14
+}
+object "<u>Verdana18Blue: CharacterProperties</u>" as Verdana18Blue{
+   font="Verdana"
+   color="Blue"
+   size=18
+}
+object "<u>Verdana12Red: CharacterProperties</u>" as Verdana12Red{
+   font="Verdana"
+   color="Red"
+   size=12
+}
+object "<u>Calibri99Blue: CharacterProperties</u>" as Calibri99Blue{
+   font="Calibri"
+   color="Blue"
+   size=99
+}
+
+
+Character0 o-- Calibri99Blue
+Character1 o--Arial14Black
+Character2 o-- Arial14Black
+Character3 o-- Arial14Black
+Character4 o-- Arial14Black
+Character5 o-- Calibri99Blue
+Character6 o-- Arial14Black
+Character7 o-- Arial14Black
+Character8 o-- Arial14Black
+Character9 o-- Arial14Black
+Character10 o--Verdana18Blue
+Character11 o--Verdana18Blue
+Character12 o-- Verdana12Red
+Character13 o-- Verdana12Red
+Character14 o-- Verdana12Red
+Character15 o--Verdana12Red
+
+object "<u>testDocument: Document</u>" as Document{
+ List<Character> characters=
+ [('H', "Calibri","Blue", 99),
+ ('e", "Arial","Black", 14),
+ ('l", "Arial","Black", 14),
+ ('l", "Arial","Black", 14),
+ ('o', "Arial","Black", 14),
+ ('W', "Calibri","Blue", 99),
+ ('o', "Arial","Black", 14),
+ ('r', "Arial","Black", 14),
+ ('l', "Arial","Black", 14),
+ ('d', "Arial","Black", 14),
+ ('C', "Verdana","Blue",18),
+ ('S', "Verdana","Blue",18),
+ ('5', "Verdana","Red", 12),
+ ('8', "Verdana","Red", 12),
+ ('0', "Verdana","Red", 12),
+ ('0', "Verdana","Red", 12)]
+
+ CharacterPropertiesFactory propertiesFactory
+}
+object "<u>propertiesFactory: CharacterPropertiesFactory</u>" as flyweightFactory{
+   Map<String,CharacterProperties> flyweights=
+   {"Arial16Black":Arial16Black,
+    "Arial14Black":Arial14Black,
+    "Verdana18Blue":Verdana18Blue,
+    "Verdana12Red";Verdana12Red
+    "Calibri99Blue":Calibri99Blue}
+}
+
+Document *--flyweightFactory
+
+flyweightFactory *--Arial16Black
+flyweightFactory *--Arial14Black
+flyweightFactory *--Verdana18Blue
+flyweightFactory *--Verdana12Red
+flyweightFactory *--Calibri99Blue
+
+
+Document *-- Character0
+Document *-- Character1
+Document *-- Character2
+Document *-- Character3
+Document *-- Character4
+Document *-- Character5
+Document *-- Character6
+Document *-- Character7
+Document *-- Character8
+Document *-- Character9
+Document *-- Character10
+Document *-- Character11
+Document *-- Character12
+Document *-- Character13
+Document *-- Character14
+Document *-- Character15
+
+@enduml

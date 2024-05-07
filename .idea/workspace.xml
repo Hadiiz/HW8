@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e380bd1-6338-462b-b8b3-0d2e9ab2c00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SnackDispenseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StateOfVendingMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VendingMachine.java" afterDir="false" />
+    <list default="true" id="6e380bd1-6338-462b-b8b3-0d2e9ab2c00f" name="Changes" comment="HW8">
+      <change afterPath="$PROJECT_DIR$/src/Flyweight.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Plant1.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Plant2.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="UML Class" />
+        <option value="UML Object" />
       </list>
     </option>
   </component>
@@ -45,11 +39,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Object",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Hadiz/IdeaProjects/quiz2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,22 +71,24 @@
       <option name="presentableId" value="Default" />
       <updated>1715048368099</updated>
       <workItem from="1715048370095" duration="6325000" />
-      <workItem from="1715058075676" duration="4087000" />
+      <workItem from="1715058075676" duration="4607000" />
     </task>
+    <task id="LOCAL-00001" summary="HW8">
+      <option name="closed" value="true" />
+      <created>1715062987331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715062987331</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HW8" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW8" />
   </component>
 </project>
